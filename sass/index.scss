@@ -1,0 +1,105 @@
+// Variables
+$color-primary: #4b4b4b;
+$color-secondary: #EBCB80;
+$color-white: #ffffff;
+
+
+// component
+* {
+  box-sizing: border-box;
+}
+
+body, p, a {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  color: $color-primary;
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $color-white;
+}
+
+.btn{
+  cursor: pointer;
+  width: 198px;
+  height: 48px;
+  border-radius: 50px;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+  border: none;
+}
+
+.title {
+  font-size: 44px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -0.0363636em;
+}
+
+.content {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card {
+
+}
+
+// Header
+.header {
+  height: 156px;
+  background: $color-primary;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    text-transform: uppercase;
+    color: $color-secondary;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.0554719em;
+    cursor: pointer;
+    align-self: center;
+    margin-left: 10%;;
+  }
+
+  .nav {
+    display: flex;
+    margin-right: 10%;
+    align-items: center;
+
+    &__container {
+      display: flex;
+      width: 318px;
+      justify-content: space-between;
+      margin-right: 50px;
+    }
+
+    &__link {
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.0555556em;
+      text-transform: uppercase;
+    }
+
+    &__btn {
+      background-color: inherit;
+      width: 180px;
+      height: 48px;
+      color: $color-white;
+      border: 1px solid $color-white;
+      letter-spacing: 0.05em;
+    }
+  }
+}

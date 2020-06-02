@@ -300,4 +300,52 @@ a {
   grid-gap: 30px;
 }
 
+.testimonial {
+  position: relative;
+  padding: 100px 250px;
+  text-align: center;
+}
+.testimonial .direct {
+  position: absolute;
+  width: 1000px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+}
+.testimonial .direct .prev, .testimonial .direct .next {
+  cursor: pointer;
+}
+.testimonial__image {
+  border-radius: 50%;
+  border: 4px solid #EBCB80;
+}
+.testimonial__name {
+  padding: 25px;
+  font-size: 18px;
+  line-height: 27px;
+}
+.testimonial__content {
+  max-width: 555px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.testimonial .dotnav {
+  max-width: 150px;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+.testimonial .dotnav .dot {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #4b4b4b;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.testimonial .dotnav .dot--active {
+  background-color: #4b4b4b;
+}
+
 /*# sourceMappingURL=/sass.0a7c4b30.css.map */

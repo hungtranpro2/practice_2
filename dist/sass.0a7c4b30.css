@@ -22,6 +22,7 @@ a {
 }
 
 .btn {
+  background-color: inherit;
   cursor: pointer;
   width: 198px;
   height: 48px;
@@ -31,6 +32,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.0625em;
   border: none;
+  color: #4b4b4b;
 }
 
 .title {
@@ -79,12 +81,66 @@ a {
   text-transform: uppercase;
 }
 .header .nav__btn {
-  background-color: inherit;
   width: 180px;
   height: 48px;
   color: #ffffff;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   letter-spacing: 0.05em;
+}
+
+.banner {
+  height: 1000px;
+  position: relative;
+  background-image: url("/Background.531c3881.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  z-index: 1;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #EBCB80;
+  mix-blend-mode: color;
+  z-index: -1;
+}
+.banner__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner__content {
+  text-align: center;
+  margin-top: 20px;
+}
+.banner__form {
+  text-align: center;
+  margin-top: 50px;
+}
+.banner__email {
+  width: 270px;
+  height: 48px;
+  border: 1px solid #4b4b4b;
+  border-radius: 4px;
+  padding-left: 20px;
+  background-color: inherit;
+  margin-right: 15px;
+}
+.banner__btn {
+  border: 2px solid #4b4b4b;
+}
+.banner__footer {
+  display: flex;
+  justify-content: space-around;
+  max-width: 480px;
+  margin: auto;
+  margin-top: 100px;
 }
 
 /*# sourceMappingURL=/sass.0a7c4b30.css.map */

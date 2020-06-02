@@ -29,6 +29,7 @@ a {
 }
 
 .btn{
+  background-color: inherit;
   cursor: pointer;
   width: 198px;
   height: 48px;
@@ -38,6 +39,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.0625em;
   border: none;
+  color: $color-primary;
 }
 
 .title {
@@ -94,12 +96,76 @@ a {
     }
 
     &__btn {
-      background-color: inherit;
+
       width: 180px;
       height: 48px;
       color: $color-white;
-      border: 1px solid $color-white;
+      border: 2px solid $color-white;
       letter-spacing: 0.05em;
     }
+  }
+}
+
+
+// Banner
+.banner{
+  height: 1000px;
+  position: relative;
+  background: {
+    image: url("../img/Background.png");
+    size: cover;
+    repeat: no-repeat;
+  }
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: $color-secondary;
+    mix-blend-mode: color;
+    z-index: -1;
+  }
+
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  &__content {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  &__form {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  &__email {
+    width: 270px;
+    height: 48px;
+    border: 1px solid $color-primary;
+    border-radius: 4px;
+    padding-left: 20px;
+    background-color: inherit;
+    margin-right: 15px;
+  }
+
+  &__btn {
+    border: 2px solid $color-primary;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-around;
+    max-width: 480px;
+    margin: auto;
+    margin-top: 100px;
   }
 }

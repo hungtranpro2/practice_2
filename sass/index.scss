@@ -169,3 +169,47 @@ a {
     margin-top: 100px;
   }
 }
+
+
+.team{
+  padding: 50px 0 100px;
+
+  &__title {
+    padding-bottom: 50px;
+  }
+
+  &__container {
+    max-width: max-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px 50px;
+
+    &--member {
+      display: flex;
+    }
+  }
+
+  &__image {
+    align-self: flex-start;
+  }
+
+  &__content {
+    padding-left: 20px;
+  }
+
+  &--name {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &--division {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  &__des {
+    max-width: 264px;
+    padding-top: 20px;
+  }
+}

@@ -143,4 +143,39 @@ a {
   margin-top: 100px;
 }
 
+.team {
+  padding: 50px 0 100px;
+}
+.team__title {
+  padding-bottom: 50px;
+}
+.team__container {
+  max-width: max-content;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 100px 50px;
+}
+.team__container--member {
+  display: flex;
+}
+.team__image {
+  align-self: flex-start;
+}
+.team__content {
+  padding-left: 20px;
+}
+.team--name {
+  font-size: 18px;
+  line-height: 26px;
+}
+.team--division {
+  font-size: 16px;
+  line-height: 26px;
+}
+.team__des {
+  max-width: 264px;
+  padding-top: 20px;
+}
+
 /*# sourceMappingURL=/sass.0a7c4b30.css.map */

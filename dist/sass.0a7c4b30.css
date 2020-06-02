@@ -47,6 +47,112 @@ a {
   line-height: 24px;
 }
 
+.card {
+  width: 360px;
+  height: 396px;
+  text-align: center;
+  padding: 40px 0;
+  background: #4b4b4b;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  position: relative;
+  opacity: 0.9;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(226.22deg, rgba(0, 0, 0, 0.0001) 4.85%, rgba(0, 0, 0, 0.401127) 96.5%);
+  background-blend-mode: multiply;
+  border-radius: 8px;
+  z-index: -1;
+}
+.card--silver::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(226.82deg, rgba(255, 255, 255, 0.3) 5.13%, rgba(255, 255, 255, 0.00007) 90.88%);
+  background-blend-mode: soft-light;
+  border-radius: 8px;
+  z-index: -1;
+}
+.card--gold {
+  background: #EBCB80;
+}
+.card--gold::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(227.73deg, rgba(255, 255, 255, 0.496575) 0%, rgba(255, 255, 255, 0.0001) 100%);
+  background-blend-mode: soft-light;
+  border-radius: 8px;
+  z-index: -1;
+}
+.card__name {
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  letter-spacing: 0.0555556em;
+  color: #EBCB80;
+  font-family: "Lucida Grande";
+}
+.card__name--gold {
+  color: #4b4b4b;
+}
+.card__price {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 15px;
+}
+.card__dollar {
+  color: #ffffff;
+}
+.card__dollar--gold {
+  color: #4b4b4b;
+}
+.card__number {
+  font-size: 64px;
+  line-height: 48px;
+  letter-spacing: -0.0363636em;
+  color: #ffffff;
+}
+.card__number--gold {
+  color: #4b4b4b;
+}
+.card__date {
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.card__date--gold {
+  color: #4b4b4b;
+}
+.card__content {
+  color: #ffffff;
+}
+.card__content--gold {
+  color: #4b4b4b;
+}
+.card__button {
+  margin-top: 30px;
+  background-color: #EBCB80;
+}
+.card__button--gold {
+  color: #ffffff;
+  background-color: #4b4b4b;
+}
+
 .header {
   height: 156px;
   background: #4b4b4b;
@@ -176,6 +282,22 @@ a {
 .team__des {
   max-width: 264px;
   padding-top: 20px;
+}
+
+.pricing {
+  background: #4b4b4b;
+  padding: 50px 0 100px;
+}
+.pricing__title {
+  padding-bottom: 50px;
+  color: #ffffff;
+}
+.pricing__container {
+  max-width: max-content;
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
 
 /*# sourceMappingURL=/sass.0a7c4b30.css.map */

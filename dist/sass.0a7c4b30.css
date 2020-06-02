@@ -51,7 +51,7 @@ a {
   width: 360px;
   height: 396px;
   text-align: center;
-  padding: 40px 0;
+  padding-top: 40px;
   background: #4b4b4b;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
@@ -65,10 +65,10 @@ a {
   right: 0;
   top: 0;
   bottom: 0;
-  background: linear-gradient(226.22deg, rgba(0, 0, 0, 0.0001) 4.85%, rgba(0, 0, 0, 0.401127) 96.5%);
-  background-blend-mode: multiply;
   border-radius: 8px;
   z-index: -1;
+  background: linear-gradient(226.22deg, rgba(0, 0, 0, 0.0001) 4.85%, rgba(0, 0, 0, 0.401127) 96.5%);
+  background-blend-mode: multiply;
 }
 .card--silver::after {
   content: "";
@@ -77,10 +77,10 @@ a {
   right: 0;
   top: 0;
   bottom: 0;
-  background: linear-gradient(226.82deg, rgba(255, 255, 255, 0.3) 5.13%, rgba(255, 255, 255, 0.00007) 90.88%);
-  background-blend-mode: soft-light;
   border-radius: 8px;
   z-index: -1;
+  background: linear-gradient(226.82deg, rgba(255, 255, 255, 0.3) 5.13%, rgba(255, 255, 255, 0.00007) 90.88%);
+  background-blend-mode: soft-light;
 }
 .card--gold {
   background: #EBCB80;
@@ -92,10 +92,10 @@ a {
   right: 0;
   top: 0;
   bottom: 0;
-  background: linear-gradient(227.73deg, rgba(255, 255, 255, 0.496575) 0%, rgba(255, 255, 255, 0.0001) 100%);
-  background-blend-mode: soft-light;
   border-radius: 8px;
   z-index: -1;
+  background: linear-gradient(227.73deg, rgba(255, 255, 255, 0.496575) 0%, rgba(255, 255, 255, 0.0001) 100%);
+  background-blend-mode: soft-light;
 }
 .card__name {
   font-size: 18px;
@@ -140,17 +140,29 @@ a {
 }
 .card__content {
   color: #ffffff;
+  max-width: 230px;
+  margin: auto;
 }
 .card__content--gold {
   color: #4b4b4b;
 }
+.card__content--large {
+  color: #ffffff;
+  text-transform: uppercase;
+}
 .card__button {
   margin-top: 30px;
   background-color: #EBCB80;
+  position: absolute;
+  bottom: 0px;
+  transform: translate(-50%, -50%);
 }
 .card__button--gold {
   color: #ffffff;
   background-color: #4b4b4b;
+}
+.card__image {
+  padding: 30px 0;
 }
 
 .header {
@@ -346,6 +358,28 @@ a {
 }
 .testimonial .dotnav .dot--active {
   background-color: #4b4b4b;
+}
+
+.advantage {
+  background: #4b4b4b;
+  padding: 50px 0 100px;
+}
+.advantage__title {
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+.advantage__content {
+  color: #ffffff;
+  max-width: 430px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+.advantage__container {
+  max-width: max-content;
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
 
 /*# sourceMappingURL=/sass.0a7c4b30.css.map */
